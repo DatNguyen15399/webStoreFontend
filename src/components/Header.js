@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import { TiShoppingCart } from 'react-icons/all'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Header extends Component {
     render() {
@@ -14,7 +16,7 @@ class Header extends Component {
                         <Link className="nav-link" to={`/home`}>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link">Introduce</Link>
+                        <Link className="nav-link" to={`/home`}>Introduce</Link>
                     </li>
                 </ul>
 

@@ -1,14 +1,15 @@
 import { connect } from 'react-redux';
 import ListProduct from '../components/ListProduct';
-import { viewProduct } from '../actions';
+import { changeViewPage } from '../actions';
 
 
 const mapStateToProps = state =>({
-    products: state.products
-});
+    products: state.listProducts.products,
+    pages: state.listProducts.pages
+})
 
 const mapDispatchToProps = dispatch =>({
-    viewProduct: id => dispatch(viewProduct(id))
+    handlePage: page => dispatch(changeViewPage(page))
 });
 
 

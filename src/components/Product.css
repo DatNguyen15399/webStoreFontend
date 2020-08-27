@@ -1,3 +1,9 @@
 .scaleImage{
     transform: scale(2);
 }
+.textPrice{
+    text-decoration: line-through;
+}
+.fontsize{
+    font-size: 0.8em
+}
